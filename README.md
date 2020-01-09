@@ -20,3 +20,8 @@ captura imagen:
 
 
 LD_PRELOAD=/usr/lib/arm-linux-gnueabihf/libv4l/v4l1convert.so fswebcam  -S 5 -s brightness=40% -s Contrast=80%  -s Gamma=20%  -r 640x480 --jpeg 90 -s Sharpness=70% -s Saturation=15% test.jpg
+
+
+compilar:
+
+g++ main.cc -o cv -I/usr/local/include/opencv4
