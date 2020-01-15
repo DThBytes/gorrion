@@ -9,7 +9,7 @@ using namespace cv;
 
 int main(){
 	std::cout << "Captura desde WebCam0\n";
-	VideoCapture cap;
+	VideoCapture cap(0);
 	if(!cap.isOpened()){
 		std::cout << "Webcam0 error!!!\n";
 		return -1;
