@@ -40,8 +40,10 @@ g++ captureToFile.cpp -o ../bin/captureToFile -I/usr/local/include/opencv4 -L/us
 LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libv4l/v4l2convert.so ./captureToFile 
 
 
-Bug camara genius eye312:
+Bug camara genius eye312: (gspca_pac7302)
 
 lsmod
+
 rmmod videodev
+
 modprobe videodev nodrop=1 timeout=5000 quirks=0x80
