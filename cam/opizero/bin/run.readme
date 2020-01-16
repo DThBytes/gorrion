@@ -1,0 +1,4 @@
+Para la Genius eye 312 hay que precargar v4l1compat.so al momento de
+ejecutar el binario:
+LD_PRELOAD=/usr/lib/arm-linux-gnueabihf/libv4l/v4l1compat.so ./captureToFile
+
