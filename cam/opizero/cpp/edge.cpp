@@ -31,7 +31,10 @@ int main(){
 	Mat img_rotated;
     	//img_rotated = rotate(frame, 180);
 	flip(rotate(frame,180), img_rotated, 1);
-	imwrite("cap.jpg", img_rotated);
+
+	Mat img_edge;
+	Canny(img_rotated, img_edge, 40, 200);
+	imwrite("cap.jpg", img_edge);
 
 	return 0;
 }

@@ -5,3 +5,4 @@ g++ captureToFile.cpp -o ../bin/captureToFile
 	-lopencv_highgui 
 	-lopencv_imgproc 
 	-lopencv_videoio
+	-lopencv_imgcodecs
