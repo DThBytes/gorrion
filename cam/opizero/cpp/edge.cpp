@@ -29,7 +29,7 @@ int main(){
 	cap >> frame;
 
 	Mat img_rotated;
-    	//img_rotated = rotate(frame, 180);
+    	img_rotated = rotate(frame, 180);
 	flip(rotate(frame,180), img_rotated, 1);
 
 	Mat img_edge;
